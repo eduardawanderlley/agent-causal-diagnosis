@@ -1,0 +1,59 @@
+{
+  "scenarios": 210,
+  "passed": 95,
+  "pass_rate": 0.452,
+  "by_fault": {
+    "none": {
+      "scenarios": 35,
+      "pass_rate": 1.0
+    },
+    "stale_document": {
+      "scenarios": 35,
+      "pass_rate": 0.571
+    },
+    "silent_tool_error": {
+      "scenarios": 35,
+      "pass_rate": 0.143
+    },
+    "extraction_corruption": {
+      "scenarios": 35,
+      "pass_rate": 0.143
+    },
+    "context_truncation": {
+      "scenarios": 35,
+      "pass_rate": 0.143
+    },
+    "prompt_drift": {
+      "scenarios": 35,
+      "pass_rate": 0.714
+    }
+  },
+  "failures": 115,
+  "failures_answered_wrongly": 25,
+  "failures_escalated": 90,
+  "localization": {
+    "first_visible_error": {
+      "hit@1": 0.0,
+      "hit@3": 0.522,
+      "mrr": 0.376
+    },
+    "last_before_final": {
+      "hit@1": 0.0,
+      "hit@3": 0.652,
+      "mrr": 0.3
+    },
+    "structural_heuristic": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "mrr": 1.0
+    },
+    "heuristic_plus_counterfactual": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "mrr": 1.0
+    }
+  },
+  "counterfactual_top1_confirmed": 1.0,
+  "avg_replays_per_failure": 1.26,
+  "median_diagnosis_ms": 0.2
+}
